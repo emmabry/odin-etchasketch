@@ -1,5 +1,19 @@
 const containerDiv = document.querySelector('.container');
 
+const resetButton = document.createElement('button');
+resetButton.classList.add('resetButton');
+resetButton.textContent = "Reset";
+resetButton.addEventListener('click', () => {
+    grid.forEach(item => {
+        item.classList.remove("coloured");
+    });
+});
+containerDiv.appendChild(resetButton);
+
+const setDimensionButton = document.createElement('button');
+setDimensionButton.classList.add('setDimensionButton');
+setDimensionButton.textContent = "Set Dimension";
+
 const rowDiv = document.createElement('div');
 rowDiv.classList.add('row');
 
