@@ -1,19 +1,39 @@
+body {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: lightgray;
 }
 
 .item {
-    padding: 10px;
     background-color: white;
-    size: 100px;
     transition: background-color 0.3s;
 }
 
-
-.coloured {
-    background-color: blue;
+.grid {
+    width: 960px;
+    height: 960px;
 }
